@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <style>
+        body{
+            margin:0;
+            padding:0;
+            background:black;
+        }
+        nav{
+            height:80px;
+            width:100%;
+            background:dodgerblue;
+            position:sticky;
+            top:0;
+            transition:500ms;
+        }
+        nav a{
+            line-height: 80px;
+            font-size: 40px;
+            margin-left: 30px;
+            text-decoration: none;
+            color:white;
+            transition:500ms;
+            font-family: Arial, sans-serif;
+        }
+        nav a:hover{
+            background:green;
+        }
+        div{
+            height:300vh;
+        }
+        div h1{
+            color:white;
+            text-align:center;
+            width:100%;
+            margin-top: 20vh;
+            font-size:80px;
+            font-family: Arial, sans-serif;
+        }
+
+        nav.sticky{
+            background:tomato;
+            height:60px;
+        }
+        nav.sticky a{
+            line-height: 60px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="index.html">SignIn</a>
+        <a href="index.html">Join</a>
+    </nav>
+    <div>
+        <h1>The Rifad</h1>
+        <h1>The Rifad</h1>
+        <h1>The Rifad</h1>
+        <h1>The Rifad</h1>
+        <h1>The Rifad</h1>
+        <h1>The Rifad</h1>
+        <h1>The Rifad</h1>
+        <h1>The Rifad</h1>
+        <h1>The Rifad</h1>
+        <h1>The Rifad</h1>
+    </div>
+    <script>
+        var x=document.querySelector("nav");
+        window.addEventListener(
+            "scroll",function(){
+                x.classList.toggle("sticky",scrollY > 0);
+            }
+            )
+    </script>
+</body>
+</html>
